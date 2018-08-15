@@ -1,5 +1,10 @@
 const makeButton = buttonName => {
-	return (`button: ${buttonName}`);
+	const buttonLabel = `Button: ${buttonName}`;
+
+	const button = document.createElement("button");
+	button.innerText = buttonLabel;
+
+	return button;
 };
 
-module.export = makeButton;
+module.exports = makeButton;
